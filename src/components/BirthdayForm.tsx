@@ -14,11 +14,14 @@ const BirthdayForm = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post(`https://birthday-reminder-backend-vggr.onrender.com/birthdays`, {
-        username,
-        email,
-        dateOfBirth,
-      });
+      const response = await axios.post(
+        `https://birthday-reminder-backend-vggr.onrender.com/birthdays`,
+        {
+          username,
+          email,
+          dateOfBirth,
+        }
+      );
 
       if (response.status === 201) {
         toast.success("Celebrants added successfully!");
