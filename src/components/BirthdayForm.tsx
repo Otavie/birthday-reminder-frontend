@@ -15,7 +15,8 @@ const BirthdayForm = () => {
 
     try {
       const response = await axios.post(
-        `https://birthday-reminder-backend-vggr.onrender.com/birthdays`,
+        // `https://birthday-reminder-backend-vggr.onrender.com/birthdays`,
+        `https://birthday-reminder-backend-vggr.onrender.com`,
         {
           username,
           email,
