@@ -1,0 +1,8 @@
+{
+    "crons": [
+      {
+        "path": "https://birthday-reminder-backend-vggr.onrender.com/birthdays",
+        "schedule": "55 16 * * *"
+      }
+    ]
+  }
