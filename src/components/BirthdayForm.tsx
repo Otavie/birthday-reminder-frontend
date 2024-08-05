@@ -3,8 +3,6 @@ import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-// const PORT = process.env.REACT_APP_PORT;
-
 const BirthdayForm = () => {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
@@ -15,8 +13,7 @@ const BirthdayForm = () => {
 
     try {
       const response = await axios.post(
-        // `https://birthday-reminder-backend-vggr.onrender.com/birthdays`,
-        `https://birthday-reminder-backend-vggr.onrender.com`,
+        `https://birthday-reminder-backend-vggr.onrender.com/birthdays`,
         {
           username,
           email,
@@ -52,10 +49,6 @@ const BirthdayForm = () => {
         toast.error("An error while adding the celebrant!");
       }
     }
-    // Reset form fields
-    // setUsername("");
-    // setEmail("");
-    // setDateOfBirth("");
   };
 
   return (
